@@ -13,6 +13,10 @@ const Header = (props) => {
             <div className={classes.parent}
                 style={{
                     backgroundImage: `url(${require("../assets/images/landing.jpg")})`,
+                    backgroundAttachment: 'fixed',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
                 }}
             >
             </div>
@@ -110,6 +114,7 @@ const useStyles = makeStyles((theme) => ({
         borderColor: "white",
         borderWidth: "2px",
         fontSize: "1.5em",
+        fontWeight: 500,
         minWidth: 200,
 
         "&:hover": {
