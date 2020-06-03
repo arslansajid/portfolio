@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Grid, Button } from '@material-ui/core';
 
 import { makeStyles } from '@material-ui/core';
+import Colors from '../styles/Colors';
 
 const Footer = () => {
     const classes = useStyles();
@@ -62,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
         minWidth: 200,
 
         "&:hover": {
-            color: "#FF5E6B",
+            color: Colors.appRed,
             borderWidth: "2px",
             borderColor: "#FF5E6B",
             background: "white"

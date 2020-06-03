@@ -1,25 +1,50 @@
 import React from 'react';
 import { Typography, Grid } from '@material-ui/core';
-
+import WebIcon from '@material-ui/icons/LaptopMac';
+import PhoneIcon from '@material-ui/icons/PhoneIphone';
+import CodeIcon from '@material-ui/icons/Code';
 import { makeStyles } from '@material-ui/core';
+import Colors from '../styles/Colors';
 
-const AchievementCard = () => {
+const AchievementCard = ({heading, description, icon}) => {
     const classes = useStyles();
+
+    const renderIcon = (icon) => {
+        switch(icon) {
+            case "web": {
+                return (
+                    <WebIcon className={classes.icon} />
+                )
+            }
+            case "mobile": {
+                return (
+                    <PhoneIcon className={classes.icon} />
+                )
+            }
+            case "code": {
+                return (
+                    <CodeIcon className={classes.icon} />
+                )
+            }
+            default: return null;
+        }
+    }
 
     return (
         <>
             <Grid
                 className={classes.container}
             >
+                {renderIcon(icon)}
                 <Typography
                     className={classes.heading}
                 >
-                    HAHAHHAHA
+                    {heading}
                 </Typography>
                 <Typography
                     className={classes.description}
                 >
-                    HAHHAHA
+                    {description}
                 </Typography>
             </Grid>
 
@@ -31,16 +56,17 @@ const useStyles = makeStyles((theme) => ({
     container: {
         boxShadow: "0px 20px 20px rgba(0, 0, 0, 0.04)",
         borderRadius: 5,
-
+        padding: 20,
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
-        flexDirection: "column"
+        flexDirection: "column",
+
+        minHeight: 250
 
     },
     heading: {
         fontWeight: 600,
-        fontSize: "2em",
+        fontSize: "1.75em",
         marginBottom: "10px",
         textAlign: 'center'
     },
@@ -48,6 +74,12 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "1.25em",
         textAlign: "center",
     },
+    icon: {
+        fontSize: '3em',
+        fontWeight: 'bolder',
+        marginBottom: "15px",
+        color: Colors.appRed
+    }
 }));
 
 export default AchievementCard;

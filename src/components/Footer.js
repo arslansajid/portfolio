@@ -1,8 +1,11 @@
 import React from 'react';
 import { Typography, Grid } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
-
-import { makeStyles } from '@material-ui/core';
+import FavoriteBorder from '@material-ui/icons/Favorite';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { makeStyles, Button } from '@material-ui/core';
 
 const Footer = () => {
     const classes = useStyles();
@@ -26,31 +29,36 @@ const Footer = () => {
                 </Grid>
                 <Grid lg={4} md={4} sm={12} xs={12} item>
                     <div className={classes.iconsContainer}>
-                        <img
-                            className={classes.icon}
-                            src={require('../assets/images/fb@2x.png')}
-                            alt='youtube-icon'
-                        />
-                        <img
-                            className={classes.icon}
-                            src={require('../assets/images/ig@2x.png')}
-                            alt='instagram-icon'
-                        />
-                        <a
-                            target="_blank"
-                            href="https://www.fb.com/arslan.sajid.773">
-                        <img
-                            className={classes.icon}
-                            src={require('../assets/images/fb@2x.png')}
-                            alt='facebook-icon'
-                        />
-                        </a>
+                        <Button
+                            variant="contained"
+                            color="default"
+                            className={classes.button}
+                            
+                        >
+                            <GitHubIcon />
+                        </Button>
+                        <Button
+                            variant="contained"
+                            color="secondary"
+                            className={classes.button}
+                            
+                        >
+                            <LinkedInIcon />
+                        </Button>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            className={classes.button}
+                            
+                        >
+                            <FacebookIcon />
+                        </Button>
                     </div>
                 </Grid>
                 <Grid lg={4} md={4} sm={12} xs={12} item>
                     <div className={classes.textRight}>
                         <Typography className={classes.copyRightText}>
-                            Copyright 2020. davysChess.com
+                            Made with <FavoriteBorder className={classes.heartIcon} /> by Arslan Sajid in 2020.
                         </Typography>
                     </div>
                 </Grid>
@@ -62,7 +70,11 @@ const Footer = () => {
 
 const useStyles = makeStyles((theme) => ({
     footerContainer: {
-        padding: '40px 0 40px 0',
+        padding: '20px 0 20px 0',
+    },
+    heartIcon: {
+        color: "red",
+        fontSize: 16
     },
     iconsContainer: {
         display: 'flex',
@@ -94,6 +106,12 @@ const useStyles = makeStyles((theme) => ({
         height: 28,
         objectFit: "contain",
     },
+    button: {
+        borderRadius: '50%',
+        width: 65,
+        height: 65,
+        margin: 10
+    }
 }));
 
 export default Footer;
