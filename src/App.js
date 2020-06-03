@@ -113,19 +113,25 @@ const App = () => {
             lg={4} md={6} sm={12} xs={12}
             item
           >
-            <ProjectCard />
+            <ProjectCard
+              title={"Graana Admin"}
+            />
           </Grid>
           <Grid
             lg={4} md={6} sm={12} xs={12}
             item
           >
-            <ProjectCard />
+            <ProjectCard
+              title={"Sneaker-Log"}
+            />
           </Grid>
           <Grid
             lg={4} md={6} sm={12} xs={12}
             item
           >
-            <ProjectCard />
+            <ProjectCard
+              title={"EASY-Q"}
+            />
           </Grid>
         </Grid>
 

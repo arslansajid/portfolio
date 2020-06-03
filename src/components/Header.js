@@ -26,7 +26,7 @@ const Header = (props) => {
                         Hi I'm Arslan &amp; I build
                         <br />
                         <Typed
-                            strings={["web applications.", "mobile applications.", "e-commerce stores", "landing pages.", "corporate websites.", "User Interfaces"]}
+                            strings={["web applications.", "mobile applications.", "e-commerce stores.", "landing pages.", "corporate websites.", "User Interfaces."]}
                             startDelay={300}
                             typeSpeed={120}
                             loop={true}

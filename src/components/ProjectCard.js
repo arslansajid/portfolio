@@ -9,7 +9,8 @@ import { makeStyles } from '@material-ui/core';
 import imageUrl from "../assets/images/landing.jpg";
 
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
+    const {title} = props;
     const classes = useStyles();
 
     return (
@@ -19,7 +20,7 @@ const ProjectCard = () => {
                     <CardMedia
                         className={classes.media}
                         image={imageUrl}
-                        title='Contemplative Reptile'
+                        title={title}
                     />
                     <div className={classes.dateContainer}>
                         <div className={classes.dateTextContainer}>
@@ -28,7 +29,7 @@ const ProjectCard = () => {
                     </div>
                     <CardContent>
                         <Typography gutterBottom variant='h5' component='h2'>
-                            Think beyond The Fall of Grippy Jay...
+                            {title}
                         </Typography>
                         <Typography variant='body2' color='textSecondary' component='p'>
                             Lorem Ipsum is simply dummy text of the printing been the industry's standard...
