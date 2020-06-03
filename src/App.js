@@ -1,26 +1,59 @@
 import React from 'react';
-import logo from './logo.svg';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core';
 import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ExpertiseCard from './components/ExpertiseCard';
+import WorkTogether from './components/WorkTogether';
 
-function App() {
+const App = () => {
+  const classes = useStyles();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <Header />
+      <Container maxWidth="xl">
+        <Grid
+          container
+          className={classes.section}
+          justify='center'
+          alignItems='center'
+          spacing={2}
         >
-          Learn React
-        </a>
-      </header>
+          <Grid
+            lg={4} md={6} sm={12} xs={12}
+            item
+          >
+            <ExpertiseCard />
+          </Grid>
+          <Grid
+            lg={4} md={6} sm={12} xs={12}
+            item
+          >
+            <ExpertiseCard />
+          </Grid>
+          <Grid
+            lg={4} md={6} sm={12} xs={12}
+            item
+          >
+            <ExpertiseCard />
+          </Grid>
+        </Grid>
+      </Container>
+      <div className={classes.section}>
+        <WorkTogether />
+      </div>
+      <Footer />
     </div>
   );
 }
 
+
+const useStyles = makeStyles((theme) => ({
+  section: {
+    margin: "100px 0 100px 0"
+  },
+})
+);
 export default App;
