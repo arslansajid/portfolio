@@ -44,7 +44,7 @@ const App = () => {
             <ExpertiseCard
               icon={"web"}
               heading={"Web Apps Development"}
-              description={"I develop for the web with JavaScript, HTML(5), CSS(3), SASS and SCSS. I love coding things from scratch, and I have professional experience with front-end frameworks like React.Js & Vue.Js"}
+              description={"I develop for the web with JavaScript, HTML(5), CSS(3), SASS and SCSS. I love coding things from scratch, and have professional experience with front-end frameworks like React.Js & Vue.Js"}
             />
           </Grid>
           <Grid
@@ -54,7 +54,7 @@ const App = () => {
             <ExpertiseCard
               icon={"mobile"}
               heading={"Mobile Apps Development"}
-              description={"I design and devlops native mobile applications for Android and iOS. I have expertise in developing mobile apps using react-native and flutter."}
+              description={"I design and develop native mobile applications for Android and iOS. I have expertise in developing mobile apps using react-native and flutter."}
             />
           </Grid>
           <Grid
@@ -100,6 +100,11 @@ const App = () => {
               company={"CARE Private Limited"}
               designation={"Senior Front End Developer"}
             />
+
+            <ExperienceCard
+              company={"Code Memory LLC"}
+              designation={"React.JS Developer"}
+            />
           </Grid>
         </Grid>
 
@@ -112,7 +117,7 @@ const App = () => {
           </Typography>
           <div className={classes.border} />
           <Typography className={classes.description}>
-            I've got more than 2 years of experience in software development.
+            I've got more than 2 years of experience in software development. Here are some of the projects that I have done for various clients.
           </Typography>
         </Grid>
         <Grid

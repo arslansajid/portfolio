@@ -76,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
     dateTextContainer: {
         position: "absolute",
         transform: "rotate(90deg)",
+        right: -20,
         bottom: 10,
         padding: "15px 25px 15px 25px" ,
         borderRadius: 5,

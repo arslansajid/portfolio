@@ -43,6 +43,18 @@ const Projects = [
     title: "Sneaker Log Admin",
     completed: "1 May, 2020"
   },
+  {
+    title: "Davy's Chess",
+    completed: "1 May, 2020"
+  },
+  {
+    title: "Code Memory",
+    completed: "15 May, 2020"
+  },
+  {
+    title: "X-Images",
+    completed: "1 June, 2020"
+  },
 ]
   
   export default Projects;

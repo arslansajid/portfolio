@@ -154,7 +154,7 @@ const useStyles = makeStyles((theme) => ({
         },
 
         [theme.breakpoints.down('xs')]: {
-            minWidth: 170
+            minWidth: 150
         },
     },
     cvButton: {

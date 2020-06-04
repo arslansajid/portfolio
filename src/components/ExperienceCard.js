@@ -13,7 +13,7 @@ const ExperienceCard = ({ company, description, icon, designation }) => {
                 lg={6} md={6} sm={12} xs={12}
                 item
             >
-                <div className={classes.logoContainer}>
+                <div className={company.includes("Roomy") ? classes.roomylogoContainer : classes.logoContainer}>
                     {
                         company.includes("Roomy")
                             ?
@@ -23,7 +23,11 @@ const ExperienceCard = ({ company, description, icon, designation }) => {
                                 ?
                                 <img alt="graana-icon" className={classes.companyLogo} src={require("../assets/images/graana.png")} />
                                 :
-                                <img alt="care-icon" className={classes.companyLogo} src={require("../assets/images/care.png")} />
+                                company.includes("LLC")
+                                    ?
+                                    <img alt="codeMemory-icon" className={classes.companyLogo} src={require("../assets/images/cm.png")} />
+                                    :
+                                    <img alt="care-icon" className={classes.companyLogo} src={require("../assets/images/care.png")} />
                     }
 
                 </div>
@@ -72,13 +76,19 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         flexDirection: "column",
     },
-    logoContainer: {
+    roomylogoContainer: {
         width: 150,
         height: 150,
         marginBottom: 10,
         borderRadius: '50%',
         // background: Colors.appPinkLite,
         // boxShadow: "0px 20px 20px rgba(0, 0, 0, 0.04)",
+        overflow: "hidden"
+    },
+    logoContainer: {
+        width: 150,
+        height: 150,
+        marginBottom: 10,
         overflow: "hidden"
     },
     companyLogo: {
