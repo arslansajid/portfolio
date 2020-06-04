@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
+// import CardActionArea from '@material-ui/core/CardActionArea';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import WebIcon from '@material-ui/icons/Language';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
@@ -11,8 +12,12 @@ import imageUrl from "../assets/images/landing.jpg";
 
 
 const ProjectCard = (props) => {
-    const {title, completionDate} = props;
+    const {title, completionDate, github, website, githubLink, websiteLink} = props;
     const classes = useStyles();
+
+    const goToRoute = (url) => {
+        window.open(url, '_blank');
+    } 
 
     return (
         <>
@@ -38,10 +43,25 @@ const ProjectCard = (props) => {
                         <div className={classes.readmoreContainer}>
                             <div className={classes.border} />
                             <Button
+                                disabled={!github}
                                 startIcon={<GitHubIcon />}
+                                color="default"
+                                variant="text"
+                                className={classes.readmoreText}
+                                onClick={() => goToRoute(githubLink)}
+                                >
+                                    View on GitHub
+                            </Button>
+                            <Button
+                                disabled={!website}
+                                startIcon={<WebIcon />}
                                 color="secondary"
                                 variant="text"
-                                className={classes.readmoreText}>View on GitHub</Button>
+                                className={classes.readmoreText}
+                                onClick={() => goToRoute(websiteLink)}
+                                >
+                                View Live
+                            </Button>
                         </div>
                     </CardContent>
                 {/* </CardActionArea> */}
@@ -105,7 +125,8 @@ const useStyles = makeStyles((theme) => ({
         // fontSize: '1.25em',
         fontWeight: 500,
         textTransform: 'capitalize',
-        color: Colors.appRed
+        // color: Colors.appRed,
+        marginRight: 10
     },
     border: {
         background: Colors.appRed,

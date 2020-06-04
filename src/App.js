@@ -138,6 +138,10 @@ const App = () => {
                   <ProjectCard
                     title={project.title}
                     completionDate={project.completed}
+                    github={project.github}
+                    githubLink={project.githubLink}
+                    website={project.website}
+                    websiteLink={project.websiteLink}
                   />
                 </Grid>
               )
