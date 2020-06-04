@@ -5,64 +5,90 @@ import FavoriteBorder from '@material-ui/icons/Favorite';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import { makeStyles, Button } from '@material-ui/core';
+import Colors from '../styles/Colors';
 
 const Footer = () => {
     const classes = useStyles();
 
     return (
         <>
-        <Container
-            disableGutters
-            maxWidth='xl'
-        >
-            <Grid
-                className={classes.footerContainer}
-                justify="center"
-                alignItems="center"
-                container lg={12} md={12} sm={12} xs={12} item
+            <Container
+                maxWidth='xl'
             >
-                <Grid lg={4} md={4} sm={12} xs={12} item>
-                    {/* <Link className={classes.logoContainer} to="/"> */}
+                <Grid
+                    className={classes.footerContainer}
+                    justify="center"
+                    alignItems="center"
+                    container lg={12} md={12} sm={12} xs={12} item
+                >
+                    <Grid lg={4} md={4} sm={12} xs={12} item>
+                        {/* <Link className={classes.logoContainer} to="/"> */}
                         {/* <img className={classes.logo} src={require("../assets/images/logo.png")} alt="logo" /> */}
-                    {/* </Link> */}
-                </Grid>
-                <Grid lg={4} md={4} sm={12} xs={12} item>
-                    <div className={classes.iconsContainer}>
-                        <Button
-                            variant="contained"
-                            color="default"
-                            className={classes.button}
-                            
-                        >
-                            <GitHubIcon />
-                        </Button>
-                        <Button
-                            variant="contained"
-                            color="secondary"
-                            className={classes.button}
-                            
-                        >
-                            <LinkedInIcon />
-                        </Button>
-                        <Button
-                            variant="contained"
-                            color="primary"
-                            className={classes.button}
-                            
-                        >
-                            <FacebookIcon />
-                        </Button>
-                    </div>
-                </Grid>
-                <Grid lg={4} md={4} sm={12} xs={12} item>
-                    <div className={classes.textRight}>
-                        <Typography className={classes.copyRightText}>
-                            Made with <FavoriteBorder className={classes.heartIcon} /> by Arslan Sajid in 2020.
+                        {/* </Link> */}
+                    </Grid>
+                    <Grid lg={4} md={4} sm={12} xs={12} item>
+                        <div className={classes.iconsContainer}>
+                            <a
+                                href="https://www.instagram.com/arslan.sajidkhan/"
+                                target="_blank"
+                            >
+                            <Button
+                                variant="contained"
+                                color="secondary"
+                                className={`${classes.button} `}
+                            >
+                                <InstagramIcon />
+                            </Button>
+                            </a>
+                            <a
+                                href="https://fb.com/arslan.sajid.773"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    className={`${classes.button} ${classes.fbButton}`}
+                                >
+                                    <FacebookIcon />
+                                </Button>
+                            </a>
+                            <a
+                                href="https://github.com/arslansajid"
+                                target="_blank"
+                            >
+                            <Button
+                                variant="contained"
+                                color="default"
+                                className={classes.button}
+
+                            >
+                                <GitHubIcon />
+                            </Button>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/arslan-sajid-b13005107/"
+                                target="_blank"
+                            >
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                className={`${classes.button} ${classes.liButton}`}
+                            >
+                                <LinkedInIcon />
+                            </Button>
+                            </a>
+                        </div>
+                    </Grid>
+                    <Grid lg={4} md={4} sm={12} xs={12} item>
+                        <div className={classes.textRight}>
+                            <Typography className={classes.copyRightText}>
+                                Made with <FavoriteBorder className={classes.heartIcon} /> by Arslan Sajid in 2020.
                         </Typography>
-                    </div>
+                        </div>
+                    </Grid>
                 </Grid>
-            </Grid>
             </Container>
         </>
     );
@@ -96,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
             margin: 20
         },
     },
-    textRight : {
+    textRight: {
         textAlign: 'right'
     },
     logoContainer: {
@@ -108,9 +134,18 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
         borderRadius: '50%',
-        width: 65,
+        width: 55,
         height: 65,
         margin: 10
+    },
+    fbButton: {
+        background: Colors.fb,
+    },
+    githubButton: {
+
+    },
+    liButton: {
+        background: Colors.linkedin
     }
 }));
 

@@ -10,6 +10,7 @@ import ExperienceCard from './components/ExperienceCard';
 import ProjectCard from './components/ProjectCard';
 import WorkTogether from './components/WorkTogether';
 import Colors from './styles/Colors';
+import Projects from './static/Projects';
 
 const App = () => {
   const classes = useStyles();
@@ -43,7 +44,7 @@ const App = () => {
             <ExpertiseCard
               icon={"web"}
               heading={"Web Apps Development"}
-              description={"I design in the browser with HTML(5), CSS(3) and JavaScript. I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too."}
+              description={"I develop for the web with JavaScript, HTML(5), CSS(3), SASS and SCSS. I love coding things from scratch, and I have professional experience with front-end frameworks like React.Js & Vue.Js"}
             />
           </Grid>
           <Grid
@@ -53,7 +54,7 @@ const App = () => {
             <ExpertiseCard
               icon={"mobile"}
               heading={"Mobile Apps Development"}
-              description={"I design in the browser with HTML(5), CSS(3) and JavaScript. I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too."}
+              description={"I design and devlops native mobile applications for Android and iOS. I have expertise in developing mobile apps using react-native and flutter."}
             />
           </Grid>
           <Grid
@@ -87,14 +88,17 @@ const App = () => {
           >
             <ExperienceCard
               company={"Graana Group of Companies"}
+              designation={"Jr. Front End Developer"}
             />
 
             <ExperienceCard
               company={"Roomy.pk"}
+              designation={"Senior Front End Developer"}
             />
 
             <ExperienceCard
               company={"CARE Private Limited"}
+              designation={"Senior Front End Developer"}
             />
           </Grid>
         </Grid>
@@ -118,30 +122,22 @@ const App = () => {
           // spacing={3}
           // justify="center"
         >
-          <Grid
-            lg={4} md={6} sm={6} xs={12}
-            item
-          >
-            <ProjectCard
-              title={"Graana Admin"}
-            />
-          </Grid>
-          <Grid
-            lg={4} md={6} sm={6} xs={12}
-            item
-          >
-            <ProjectCard
-              title={"Sneaker-Log"}
-            />
-          </Grid>
-          <Grid
-            lg={4} md={6} sm={6} xs={12}
-            item
-          >
-            <ProjectCard
-              title={"EASY-Q"}
-            />
-          </Grid>
+          {
+            Projects.map((project, index) => {
+              return (
+                <Grid
+                  lg={4} md={6} sm={6} xs={12}
+                  item
+                  key={index}
+                >
+                  <ProjectCard
+                    title={project.title}
+                    completionDate={project.completed}
+                  />
+                </Grid>
+              )
+            })
+          }
         </Grid>
 
       </Container>

@@ -56,12 +56,12 @@ const useStyles = makeStyles((theme) => ({
     container: {
         boxShadow: "0px 20px 20px rgba(0, 0, 0, 0.04)",
         borderRadius: 5,
-        padding: 10,
+        padding: 15,
         margin: 10,
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        minHeight: 250,
+        minHeight: 300,
 
         [theme.breakpoints.down('md')]: {
             marginBottom: 20,

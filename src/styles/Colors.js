@@ -9,7 +9,10 @@ const Colors = {
     appRed: "#FF5E6B",
     appPink: "#FF77A4",
     appPinkLite: "#FF9CBD",
-    seperator: "#E2E2E2"
+    seperator: "#E2E2E2",
+    fb: "#3B5998",
+    linkedin: "#0072b1",
+    github: "#333"
   };
   
   export default Colors;

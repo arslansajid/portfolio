@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Typed from 'react-typed';
+import Colors from '../styles/Colors';
 
 import { makeStyles, Button } from '@material-ui/core';
 
@@ -39,6 +40,7 @@ const Header = (props) => {
                     </Typography>
                 </div>
                 <div className={classes.hireBtnContainer}>
+                    <div className={classes.btnsContainer}>
                     <a href="mailto:arslansajid951@gmail.com">
                     <Button
                         className={classes.hireButton}
@@ -49,6 +51,19 @@ const Header = (props) => {
                         Hire Me
                     </Button>
                     </a>
+                    <a
+                        target="_blank"
+                        href="https://drive.google.com/file/d/1RlPg-swe36BAfT5DBgafeC8jpvUlac0-/view?usp=sharing">
+                    <Button
+                        className={classes.cvButton}
+                        size="large"
+                        variant="outlined"
+                        color="primary"
+                    >
+                        Download CV
+                    </Button>
+                    </a>
+                    </div>
                 </div>
             </Container>
         </>
@@ -81,6 +96,18 @@ const useStyles = makeStyles((theme) => ({
             bottom: '30%',
         },
     },
+    btnsContainer: {
+        display: "flex",
+        position: 'absolute',
+        transform: 'translate(-50%,-50%)',
+        bottom: '10%',
+        left: '50%',
+
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+            justifyContent: "space-around"
+        },
+    },
     centerText: {
         fontSize: '3.75em',
         fontWeight: 600,
@@ -105,16 +132,13 @@ const useStyles = makeStyles((theme) => ({
         filter: 'brightness(0.6)',
     },
     hireButton: {
-        position: 'absolute',
-        bottom: '10%',
-        left: '50%',
-        transform: 'translate(-50%,-50%)',
         textTransform: "capitalize",
         color: "white",
         borderColor: "white",
         borderWidth: "2px",
         fontSize: "1.5em",
         fontWeight: 500,
+        whiteSpace: "noWrap",
         minWidth: 200,
 
         "&:hover": {
@@ -122,7 +146,36 @@ const useStyles = makeStyles((theme) => ({
             borderWidth: "2px",
             borderColor: "white",
             background: "white"
-        }
+        },
+
+        [theme.breakpoints.up('sm')]: {
+            marginRight: 15,
+        },
+
+        [theme.breakpoints.down('xs')]: {
+            minWidth: 170
+        },
+    },
+    cvButton: {
+        textTransform: "capitalize",
+        color: "white",
+        borderColor: "white",
+        borderWidth: "2px",
+        fontSize: "1.5em",
+        fontWeight: 500,
+        whiteSpace: "noWrap",
+        minWidth: 200,
+
+        "&:hover": {
+            color: "white",
+            borderWidth: "2px",
+            borderColor: Colors.appRed,
+            background: Colors.appRed
+        },
+
+        [theme.breakpoints.down('xs')]: {
+            minWidth: 170
+        },
     }
 }));
 

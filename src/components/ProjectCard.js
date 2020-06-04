@@ -1,16 +1,17 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Colors from '../styles/Colors';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Button } from '@material-ui/core';
 import imageUrl from "../assets/images/landing.jpg";
 
 
 const ProjectCard = (props) => {
-    const {title} = props;
+    const {title, completionDate} = props;
     const classes = useStyles();
 
     return (
@@ -24,7 +25,7 @@ const ProjectCard = (props) => {
                     />
                     <div className={classes.dateContainer}>
                         <div className={classes.dateTextContainer}>
-                            <Typography className={classes.dateText}>24 Jun, 2020</Typography>
+                            <Typography className={classes.dateText}>{completionDate}</Typography>
                         </div>
                     </div>
                     <CardContent>
@@ -36,7 +37,11 @@ const ProjectCard = (props) => {
                         </Typography>
                         <div className={classes.readmoreContainer}>
                             <div className={classes.border} />
-                            <Typography className={classes.readmoreText}>View on GitHub</Typography>
+                            <Button
+                                startIcon={<GitHubIcon />}
+                                color="secondary"
+                                variant="text"
+                                className={classes.readmoreText}>View on GitHub</Button>
                         </div>
                     </CardContent>
                 {/* </CardActionArea> */}
@@ -56,6 +61,9 @@ const useStyles = makeStyles((theme) => ({
     },
     media: {
         height: 300,
+        [theme.breakpoints.down('sm')]: {
+            height: 250,
+        },
     },
     cardButtonContainer: {
         display: 'flex',
@@ -63,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     },
     dateContainer: {
         position: "relative",
-        marginBottom: 50
+        marginBottom: 30
     },
     dateTextContainer: {
         position: "absolute",
@@ -90,11 +98,12 @@ const useStyles = makeStyles((theme) => ({
     readmoreContainer: {
         display: 'flex',
         alignItems: 'center',
-        marginTop: 20
+        marginTop: 10
     },
     readmoreText: {
-        fontSize: 24,
-        fontWeight: 600,
+        // fontSize: '1.25em',
+        fontWeight: 500,
+        textTransform: 'capitalize',
         color: Colors.appRed
     },
     border: {
