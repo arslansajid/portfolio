@@ -6,7 +6,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import { makeStyles, Button } from '@material-ui/core';
+import { makeStyles, IconButton } from '@material-ui/core';
 import Colors from '../styles/Colors';
 
 const Footer = () => {
@@ -35,53 +35,53 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            <Button
+                            <IconButton
                                 variant="contained"
-                                color="secondary"
-                                className={`${classes.button} `}
+                                // color="secondary"
+                                // className={`${classes.button} `}
                             >
                                 <InstagramIcon />
-                            </Button>
+                            </IconButton>
                             </a>
                             <a
                                 href="https://fb.com/arslan.sajid.773"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Button
+                                <IconButton
                                     variant="contained"
-                                    color="primary"
-                                    className={`${classes.button} ${classes.fbButton}`}
+                                    // color="primary"
+                                    // className={`${classes.button} ${classes.fbButton}`}
                                 >
                                     <FacebookIcon />
-                                </Button>
+                                </IconButton>
                             </a>
                             <a
                                 href="https://github.com/arslansajid"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            <Button
+                            <IconButton
                                 variant="contained"
-                                color="default"
-                                className={classes.button}
+                                // color="default"
+                                // className={classes.button}
 
                             >
                                 <GitHubIcon />
-                            </Button>
+                            </IconButton>
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/arslan-sajid-b13005107/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            <Button
+                            <IconButton
                                 variant="contained"
-                                color="primary"
-                                className={`${classes.button} ${classes.liButton}`}
+                                // color="primary"
+                                // className={`${classes.button} ${classes.liButton}`}
                             >
                                 <LinkedInIcon />
-                            </Button>
+                            </IconButton>
                             </a>
                         </div>
                     </Grid>
