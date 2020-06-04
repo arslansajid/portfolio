@@ -33,6 +33,7 @@ const Footer = () => {
                             <a
                                 href="https://www.instagram.com/arslan.sajidkhan/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                             <Button
                                 variant="contained"
@@ -45,6 +46,7 @@ const Footer = () => {
                             <a
                                 href="https://fb.com/arslan.sajid.773"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <Button
                                     variant="contained"
@@ -57,6 +59,7 @@ const Footer = () => {
                             <a
                                 href="https://github.com/arslansajid"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                             <Button
                                 variant="contained"
@@ -70,6 +73,7 @@ const Footer = () => {
                             <a
                                 href="https://www.linkedin.com/in/arslan-sajid-b13005107/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                             <Button
                                 variant="contained"
