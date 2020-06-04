@@ -49,6 +49,10 @@ const useStyles = makeStyles((theme) => ({
     root: {
         // maxWidth: 350,
         // boxShadow: "0px 20px 60px rgba(0, 0, 0, 0.08)",
+        margin: 10,
+        [theme.breakpoints.down('md')]: {
+            marginBottom: 20,
+        },
     },
     media: {
         height: 300,

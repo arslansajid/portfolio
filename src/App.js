@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Container maxWidth="xl">
+      <Container >
         {/* Expertise Section goes here */}
         <Grid
           className={`${classes.textCenter} ${classes.section}`}
@@ -32,7 +32,9 @@ const App = () => {
         <Grid
           container
           className={classes.section}
-          spacing={2}
+          // lg={12} md={12} sm={12} xs={12}
+          justify="center"
+          align="center"
         >
           <Grid
             lg={4} md={6} sm={12} xs={12}
@@ -83,12 +85,17 @@ const App = () => {
             className={classes.section}
             spacing={2}
           >
-            <ExperienceCard />
+            <ExperienceCard
+              company={"Graana Group of Companies"}
+            />
 
-            <ExperienceCard />
+            <ExperienceCard
+              company={"Roomy.pk"}
+            />
 
-            <ExperienceCard />
-
+            <ExperienceCard
+              company={"CARE Private Limited"}
+            />
           </Grid>
         </Grid>
 
@@ -107,10 +114,12 @@ const App = () => {
         <Grid
           container
           className={classes.section}
-          spacing={2}
+          // lg={12} md={12} sm={12} xs={12}
+          // spacing={3}
+          // justify="center"
         >
           <Grid
-            lg={4} md={6} sm={12} xs={12}
+            lg={4} md={6} sm={6} xs={12}
             item
           >
             <ProjectCard
@@ -118,7 +127,7 @@ const App = () => {
             />
           </Grid>
           <Grid
-            lg={4} md={6} sm={12} xs={12}
+            lg={4} md={6} sm={6} xs={12}
             item
           >
             <ProjectCard
@@ -126,7 +135,7 @@ const App = () => {
             />
           </Grid>
           <Grid
-            lg={4} md={6} sm={12} xs={12}
+            lg={4} md={6} sm={6} xs={12}
             item
           >
             <ProjectCard

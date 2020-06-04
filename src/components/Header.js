@@ -42,7 +42,7 @@ const Header = (props) => {
                     <a href="mailto:arslansajid951@gmail.com">
                     <Button
                         className={classes.hireButton}
-                        size="lg"
+                        size="large"
                         variant="outlined"
                         color="primary"
                     >

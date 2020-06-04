@@ -21,7 +21,7 @@ const Footer = () => {
                 </Typography>
                 <Button
                     className={classes.hireButton}
-                    size="lg"
+                    size="large"
                     variant="outlined"
                     color="primary"
                 >Contact
