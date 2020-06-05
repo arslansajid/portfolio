@@ -126,7 +126,8 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 500,
         textTransform: 'capitalize',
         // color: Colors.appRed,
-        marginRight: 10
+        marginRight: 10,
+        whiteSpace: "noWrap",
     },
     border: {
         background: Colors.appRed,
