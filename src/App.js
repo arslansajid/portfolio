@@ -142,6 +142,7 @@ const App = () => {
                     githubLink={project.githubLink}
                     website={project.website}
                     websiteLink={project.websiteLink}
+                    image={project.image}
                   />
                 </Grid>
               )

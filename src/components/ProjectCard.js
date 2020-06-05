@@ -12,7 +12,7 @@ import imageUrl from "../assets/images/landing.jpg";
 
 
 const ProjectCard = (props) => {
-    const {title, completionDate, github, website, githubLink, websiteLink} = props;
+    const {title, completionDate, github, website, githubLink, websiteLink, image} = props;
     const classes = useStyles();
 
     const goToRoute = (url) => {
@@ -25,7 +25,7 @@ const ProjectCard = (props) => {
                 {/* <CardActionArea> */}
                     <CardMedia
                         className={classes.media}
-                        image={imageUrl}
+                        image={!!image ? require(`../assets/images/projects/${image}`) : imageUrl}
                         title={title}
                     />
                     <div className={classes.dateContainer}>

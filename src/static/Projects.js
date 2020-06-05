@@ -14,6 +14,7 @@ const Projects = [
     githubLink: '',
     website: true,
     websiteLink: 'https://roomy.pk',
+    image: "roomy.png"
   },
   {
     title: "Roomy Mobile App",
@@ -22,6 +23,7 @@ const Projects = [
     githubLink: '',
     website: true,
     websiteLink: 'https://play.google.com/store/apps/details?id=pk.roomy.app',
+    image: "roomy-mobile.png"
   },
   {
     title: "Waffle World",
@@ -30,6 +32,7 @@ const Projects = [
     githubLink: '',
     website: false,
     websiteLink: '',
+    image: 'waffle-world.png'
   },
   {
     title: "Waffle World Admin",
@@ -46,6 +49,7 @@ const Projects = [
     githubLink: '',
     website: true,
     websiteLink: 'https://winter-sale.herokuapp.com/',
+    image: "winter-sale.png"
   },
   {
     title: "R6pro Admin",
@@ -54,6 +58,7 @@ const Projects = [
     githubLink: 'https://github.com/arslansajid/r6pro-dashboard',
     website: true,
     websiteLink: 'http://admin-r6pro.herokuapp.com/',
+    image: "r6pro.png"
   },
   {
     title: "Meraj Housing",
@@ -62,6 +67,7 @@ const Projects = [
     githubLink: 'https://github.com/arslansajid/meeraj-homes',
     website: true,
     websiteLink: 'https://meeraj.herokuapp.com/',
+    image: "meraj.png"
   },
   {
     title: "Easy-Q",
@@ -70,6 +76,7 @@ const Projects = [
     githubLink: 'https://github.com/arslansajid/easy-q',
     website: true,
     websiteLink: 'http://easy-qr.herokuapp.com/',
+    image: "easyq.png"
   },
   {
     title: "Sneaker Log Admin",
@@ -78,6 +85,7 @@ const Projects = [
     githubLink: 'https://github.com/arslansajid/sneaker-log-dashboard',
     website: true,
     websiteLink: 'http://admin-sneakerlog.herokuapp.com/',
+    image: 'sneakerlog.png'
   },
   {
     title: "Davy's Chess",
@@ -86,6 +94,7 @@ const Projects = [
     githubLink: '',
     website: true,
     websiteLink: 'https://davyschess.com/',
+    image: "davyschess.png"
   },
   {
     title: "Code Memory",
@@ -94,6 +103,7 @@ const Projects = [
     githubLink: '',
     website: false,
     websiteLink: '',
+    image: "codememory.png"
   },
   {
     title: "X-Images",
@@ -102,6 +112,7 @@ const Projects = [
     githubLink: '',
     website: false,
     websiteLink: '',
+    image: "ximages.png"
   },
 ]
   
