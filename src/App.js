@@ -173,7 +173,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     lineHeight: "32px",
     color: Colors.textGrey,
-    textAlign: 'center'
   },
   textCenter: {
     display: "flex",
