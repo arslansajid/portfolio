@@ -45,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 600,
         lineHeight: "40px",
         marginBottom: "20px",
-        color: "white"
+        color: "white",
+        textAlign: "center",
     },
     description: {
         textAlign: "center",

@@ -87,13 +87,8 @@ const App = () => {
             spacing={2}
           >
             <ExperienceCard
-              company={"Graana Group of Companies"}
-              designation={"Jr. Front End Developer"}
-            />
-
-            <ExperienceCard
-              company={"Roomy.pk"}
-              designation={"Senior Front End Developer"}
+              company={"Code Memory LLC"}
+              designation={"React.JS Developer"}
             />
 
             <ExperienceCard
@@ -102,8 +97,13 @@ const App = () => {
             />
 
             <ExperienceCard
-              company={"Code Memory LLC"}
-              designation={"React.JS Developer"}
+              company={"Roomy.pk"}
+              designation={"Senior Front End Developer"}
+            />
+
+            <ExperienceCard
+              company={"Graana Group of Companies"}
+              designation={"Jr. Front End Developer"}
             />
           </Grid>
         </Grid>
@@ -166,12 +166,14 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     lineHeight: "40px",
     marginBottom: "20px",
+    textAlign: 'center'
   },
   description: {
     textAlign: "center",
     fontSize: "20px",
     lineHeight: "32px",
-    color: Colors.textGrey
+    color: Colors.textGrey,
+    textAlign: 'center'
   },
   textCenter: {
     display: "flex",
