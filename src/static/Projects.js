@@ -1,11 +1,21 @@
 const Projects = [
   {
-    title: "Graana.com",
-    completed: "1 June ,2018",
+    title: "Davy's Chess",
+    completed: "1 May, 2020",
     github: false,
     githubLink: '',
     website: true,
-    websiteLink: 'https://graana.com',
+    websiteLink: 'https://davyschess.com/',
+    image: "davyschess.png"
+  },
+  {
+    title: "Code Memory",
+    completed: "15 May, 2020",
+    github: false,
+    githubLink: '',
+    website: false,
+    websiteLink: '',
+    image: "codememory.png"
   },
   {
     title: "Roomy.pk",
@@ -15,6 +25,15 @@ const Projects = [
     website: true,
     websiteLink: 'https://roomy.pk',
     image: "roomy.png"
+  },
+  {
+    title: "X-Images",
+    completed: "1 June, 2020",
+    github: false,
+    githubLink: '',
+    website: false,
+    websiteLink: '',
+    image: "ximages.png"
   },
   {
     title: "Roomy Mobile App",
@@ -88,31 +107,24 @@ const Projects = [
     image: 'sneakerlog.png'
   },
   {
-    title: "Davy's Chess",
-    completed: "1 May, 2020",
-    github: false,
-    githubLink: '',
+    title: "Avatar Store",
+    completed: "21 April ,2018",
+    github: true,
+    githubLink: 'https://github.com/arslansajid/avatar-store',
     website: true,
-    websiteLink: 'https://davyschess.com/',
-    image: "davyschess.png"
-  },
-  {
-    title: "Code Memory",
-    completed: "15 May, 2020",
-    github: false,
-    githubLink: '',
-    website: false,
-    websiteLink: '',
-    image: "codememory.png"
-  },
-  {
-    title: "X-Images",
-    completed: "1 June, 2020",
-    github: false,
-    githubLink: '',
-    website: false,
-    websiteLink: '',
-    image: "ximages.png"
+    websiteLink: 'https://goofy-newton-72b5a7.netlify.app/',
+    image: "avatar.png",
+    tools: {
+      react: true,
+      nodeJS: true,
+      firebase: true,
+      mongo: true,
+      materialUI: true,
+      semanticUI: true,
+      bootstrap: true,
+      nextJS: true,
+      gatsbyJS: true,
+    }
   },
 ]
   
