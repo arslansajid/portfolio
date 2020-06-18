@@ -12,7 +12,7 @@ import imageUrl from "../assets/images/landing.jpg";
 
 
 const ProjectCard = (props) => {
-    const {title, completionDate, github, website, githubLink, websiteLink, image} = props;
+    const {title, completionDate, github, website, githubLink, websiteLink, image, description} = props;
     const classes = useStyles();
 
     const goToRoute = (url) => {
@@ -38,7 +38,13 @@ const ProjectCard = (props) => {
                             {title}
                         </Typography>
                         <Typography variant='body2' color='textSecondary' component='p'>
-                            Lorem Ipsum is simply dummy text of the printing been the industry's standard...
+                            {
+                                !!description
+                                ?
+                                description
+                                :
+                                "Lorem Ipsum is simply dummy text of the printing been the industry's standard..."
+                            }
                         </Typography>
                         <div className={classes.readmoreContainer}>
                             <div className={classes.border} />
@@ -91,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
     },
     dateContainer: {
         position: "relative",
-        marginBottom: 30
+        marginBottom: '1em'
     },
     dateTextContainer: {
         position: "absolute",
