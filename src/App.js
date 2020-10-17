@@ -11,6 +11,7 @@ import ProjectCard from './components/ProjectCard';
 import WorkTogether from './components/WorkTogether';
 import Colors from './styles/Colors';
 import Projects from './static/Projects';
+import Companies from './static/Companies';
 
 const App = () => {
   const classes = useStyles();
@@ -86,25 +87,19 @@ const App = () => {
             className={classes.section}
             spacing={2}
           >
-            <ExperienceCard
-              company={"Code Memory LLC"}
-              designation={"React.JS Developer"}
-            />
-
-            <ExperienceCard
-              company={"CARE Private Limited"}
-              designation={"Senior Front End Developer"}
-            />
-
-            <ExperienceCard
-              company={"Roomy.pk"}
-              designation={"Senior Front End Developer"}
-            />
-
-            <ExperienceCard
-              company={"Graana Group of Companies"}
-              designation={"Jr. Front End Developer"}
-            />
+            {
+              Companies.map((company, index) => (
+                <ExperienceCard
+                  key={index}
+                  company={company.name}
+                  designation={company.designation}
+                  location={company.location}
+                  duration={company.duration}
+                  logo={company.logo}
+                  responsibilities={company.responsibilities}
+                />
+              ))
+            }
           </Grid>
         </Grid>
 
