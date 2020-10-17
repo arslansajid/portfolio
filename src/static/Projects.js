@@ -139,6 +139,26 @@ const Projects = [
       gatsbyJS: true,
     }
   },
+  {
+    title: "Rank Page",
+    completed: "25 August, 2020",
+    github: false,
+    githubLink: 'https://github.com/arslansajid/sneaker-log-dashboard',
+    website: true,
+    websiteLink: 'https://rank-page.web.app/',
+    image: 'rank-page.png',
+    description: 'Rank Page Web Application.'
+  },
+  {
+    title: "Camero",
+    completed: "1 August, 2020",
+    github: false,
+    githubLink: 'https://github.com/arslansajid/sneaker-log-dashboard',
+    website: true,
+    websiteLink: 'https://stripe-testing-ecbfc.web.app/',
+    image: 'camero.png',
+    description: 'Camero Web Application.'
+  },
 ]
   
   export default Projects;
