@@ -3,7 +3,7 @@ import { Typography, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import Colors from '../styles/Colors';
 
-const ExperienceCard = ({ company, description, icon, designation }) => {
+const ExperienceCard = ({ company, responsibilities, logo, designation, duration, location }) => {
     const classes = useStyles();
 
     return (
@@ -14,25 +14,16 @@ const ExperienceCard = ({ company, description, icon, designation }) => {
                 item
             >
                 <div className={company.includes("Roomy") ? classes.roomylogoContainer : classes.logoContainer}>
-                    {
-                        company.includes("Roomy")
-                            ?
-                            <img alt="roomy-icon" className={classes.companyLogo} src={require("../assets/images/roomy.png")} />
-                            :
-                            company.includes("Graana")
-                                ?
-                                <img alt="graana-icon" className={classes.companyLogo} src={require("../assets/images/graana.png")} />
-                                :
-                                company.includes("LLC")
-                                    ?
-                                    <img alt="codeMemory-icon" className={classes.companyLogo} src={require("../assets/images/cm.png")} />
-                                    :
-                                    <img alt="care-icon" className={classes.companyLogo} src={require("../assets/images/care.png")} />
-                    }
-
+                    <img alt="company-logo" className={classes.companyLogo} src={require(`../assets/images/${logo}`)} />
                 </div>
-                <Typography className={classes.heading}>
+                <Typography gutterBottom className={classes.heading}>
                     {company}
+                </Typography>
+                <Typography gutterBottom className={classes.location}>
+                    {location}
+                </Typography>
+                <Typography className={classes.duration}>
+                    {duration}
                 </Typography>
             </Grid>
             <Grid
@@ -47,14 +38,11 @@ const ExperienceCard = ({ company, description, icon, designation }) => {
                 <div className={classes.description}>
                     Daily responsibilities include: <br />
                     <ul className={classes.linksList}>
-                        <li className={classes.footerLink}>{'Development of front end web & cross-platform mobile components for company projects.'}</li>
-                        {company.includes("Graana") && (
-                            <>
-                                <li className={classes.footerLink}>Worked on the graana.com web portal and delivered responsive front-end components.</li>
-                                <li className={classes.footerLink}>Bootstrapped the project and delivered the first release.</li>
-                            </>
-                        )}
-                        <li className={classes.footerLink}>{'Coordinating with QA engineers and project managers on analysing requirements and execution plans. Involved in the complete DevOps cycle.'}</li>
+                        {
+                            responsibilities.map((responsibility, index) => (
+                                <li key={index} className={classes.footerLink}>{responsibility}</li>
+                            ))
+                        }
                     </ul>
                 </div>
             </Grid>
@@ -68,7 +56,12 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 5,
         padding: 20,
         minHeight: 250,
-        margin: "40px 0 40px 0"
+        margin: "2em 0 2em 0",
+
+        [theme.breakpoints.down('sm')]: {
+            padding: 0,
+            margin: "1em 0 1em 0",
+        },
     },
     textCenter: {
         display: "flex",
@@ -81,9 +74,12 @@ const useStyles = makeStyles((theme) => ({
         height: 150,
         marginBottom: 10,
         borderRadius: '50%',
-        // background: Colors.appPinkLite,
-        // boxShadow: "0px 20px 20px rgba(0, 0, 0, 0.04)",
-        overflow: "hidden"
+        overflow: "hidden",
+
+        [theme.breakpoints.down('sm')]: {
+            width: 125,
+            height: 125,
+        },
     },
     logoContainer: {
         width: 150,
@@ -99,8 +95,7 @@ const useStyles = makeStyles((theme) => ({
     },
     heading: {
         fontWeight: 600,
-        fontSize: "1.75em",
-        marginBottom: "10px",
+        fontSize: "1.5em",
         textAlign: 'center'
     },
     designation: {
@@ -135,6 +130,15 @@ const useStyles = makeStyles((theme) => ({
         color: Colors.textBlack,
         marginBottom: 10,
     },
+    location: {
+        textAlign: "center",
+        fontSize: "1.125em",
+    },
+    duration: {
+        textAlign: "center",
+        fontSize: "1.125em",
+        color: Colors.textGrey,
+      },
 }));
 
 export default ExperienceCard;
