@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Grid } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
-import FavoriteBorder from '@material-ui/icons/Favorite';
+import HeartIcon from '@material-ui/icons/Favorite';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -88,7 +88,7 @@ const Footer = () => {
                     <Grid lg={4} md={4} sm={12} xs={12} item>
                         <div className={classes.textRight}>
                             <Typography className={classes.copyRightText}>
-                                Made with <FavoriteBorder className={classes.heartIcon} /> by Arslan Sajid in 2020.
+                                Made with <HeartIcon className={classes.heartIcon} /> by Arslan Sajid in 2020.
                         </Typography>
                         </div>
                     </Grid>
@@ -104,7 +104,9 @@ const useStyles = makeStyles((theme) => ({
     },
     heartIcon: {
         color: "red",
-        fontSize: 16
+        fontSize: 16,
+        position: 'relative',
+        top: '2px'
     },
     iconsContainer: {
         display: 'flex',

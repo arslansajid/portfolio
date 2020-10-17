@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     },
     heading: {
         fontWeight: 600,
-        fontSize: "1.75em",
+        fontSize: "1.5em",
         marginBottom: "10px",
         textAlign: 'center'
     },
