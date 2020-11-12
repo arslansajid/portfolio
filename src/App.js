@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles, Typography } from '@material-ui/core';
@@ -12,8 +12,14 @@ import WorkTogether from './components/WorkTogether';
 import Colors from './styles/Colors';
 import Projects from './static/Projects';
 import Companies from './static/Companies';
+import { analytics } from "./firebase";
 
 const App = () => {
+
+  useEffect(() => {
+    analytics.logEvent("page_view" /*, { name: 'lever_puzzle' } */);
+  }, [])
+
   const classes = useStyles();
   return (
     <div className="App">
@@ -118,9 +124,9 @@ const App = () => {
         <Grid
           container
           className={classes.section}
-          // lg={12} md={12} sm={12} xs={12}
-          // spacing={3}
-          // justify="center"
+        // lg={12} md={12} sm={12} xs={12}
+        // spacing={3}
+        // justify="center"
         >
           {
             Projects.map((project, index) => {
