@@ -140,6 +140,26 @@ const Projects = [
     }
   },
   {
+    title: "Asaan Qurban Mobile App",
+    completed: "1 July, 2020",
+    github: false,
+    githubLink: '',
+    website: true,
+    websiteLink: 'https://play.google.com/store/apps/details?id=com.sezonacreactnativemobileapp&hl=en&gl=US',
+    image: "qurbani-mob.webp",
+    description: 'Asaan Qurban Native Mobile Application.'
+  },
+  {
+    title: "Asaan Qurban",
+    completed: "1 August, 2020",
+    github: false,
+    githubLink: 'https://github.com/arslansajid/sneaker-log-dashboard',
+    website: true,
+    websiteLink: 'https://asaanqurban.com',
+    image: 'qurbani-web.png',
+    description: 'Asaan Qurban Web Application.'
+  },
+  {
     title: "Rank Page",
     completed: "25 August, 2020",
     github: false,
@@ -160,6 +180,5 @@ const Projects = [
     description: 'Camero Web Application.'
   },
 ]
-  
-  export default Projects;
-  
+
+export default Projects;

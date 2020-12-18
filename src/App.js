@@ -85,7 +85,7 @@ const App = () => {
           </Typography>
           <div className={classes.border} />
           <Typography className={classes.description}>
-            I've got more than 2 years of experience in software development.
+            I've got more than 3 years of experience in software development.
           </Typography>
 
           <Grid
@@ -118,7 +118,7 @@ const App = () => {
           </Typography>
           <div className={classes.border} />
           <Typography className={classes.description}>
-            I've got more than 2 years of experience in software development. Here are some of the projects that I have done for various clients.
+            Here are some of the projects that I have done for clients all around the world.
           </Typography>
         </Grid>
         <Grid
@@ -162,7 +162,7 @@ const App = () => {
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    margin: "70px 0 70px 0"
+    margin: "4em 0 4em 0"
   },
   heading: {
     fontSize: "2.25em",
