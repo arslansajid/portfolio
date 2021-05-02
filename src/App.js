@@ -162,13 +162,13 @@ const App = () => {
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    margin: "4em 0 4em 0"
+    margin: "2em 0"
   },
   heading: {
-    fontSize: "2.25em",
+    fontSize: theme.spacing(4),
     fontWeight: 600,
     lineHeight: "40px",
-    marginBottom: "20px",
+    marginBottom: theme.spacing(2),
     textAlign: 'center'
   },
   description: {

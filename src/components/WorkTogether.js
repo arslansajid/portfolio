@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
         color: "white",
         borderColor: "white",
         borderWidth: "2px",
-        fontSize: "1.5em",
+        fontSize: "1.25em",
         minWidth: 200,
 
         "&:hover": {

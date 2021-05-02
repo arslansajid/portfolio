@@ -43,7 +43,7 @@ const Header = (props) => {
                     <div className={classes.btnsContainer}>
                     <a href="mailto:arslansajid951@gmail.com">
                     <Button
-                        className={classes.hireButton}
+                        className={`${classes.headerButton} ${classes.hireButton}`}
                         size="large"
                         variant="outlined"
                         color="primary"
@@ -56,7 +56,7 @@ const Header = (props) => {
                         rel="noopener noreferrer"
                         href="https://drive.google.com/file/d/1RlPg-swe36BAfT5DBgafeC8jpvUlac0-/view?usp=sharing">
                     <Button
-                        className={classes.cvButton}
+                        className={`${classes.headerButton} ${classes.cvButton}`}
                         size="large"
                         variant="outlined"
                         color="primary"
@@ -106,11 +106,11 @@ const useStyles = makeStyles((theme) => ({
 
         [theme.breakpoints.down('xs')]: {
             width: '100%',
-            justifyContent: "space-around"
+            justifyContent: "center"
         },
     },
     centerText: {
-        fontSize: '3.75em',
+        fontSize: '3.5em',
         fontWeight: 600,
         lineHeight: '70px',
         zIndex: 1000,
@@ -132,15 +132,22 @@ const useStyles = makeStyles((theme) => ({
         // backgroundColor: "rgba(0, 0, 0, 0.5)",
         filter: 'brightness(0.6)',
     },
-    hireButton: {
+    headerButton: {
         textTransform: "capitalize",
         color: "white",
         borderColor: "white",
         borderWidth: "2px",
-        fontSize: "1.5em",
+        fontSize: "1.25em",
         fontWeight: 500,
         whiteSpace: "noWrap",
         minWidth: 200,
+
+        [theme.breakpoints.down('xs')]: {
+            minWidth: 130
+        },
+    },
+    hireButton: {
+        marginRight: theme.spacing(2),
 
         "&:hover": {
             color: "black",
@@ -148,34 +155,13 @@ const useStyles = makeStyles((theme) => ({
             borderColor: "white",
             background: "white"
         },
-
-        [theme.breakpoints.up('sm')]: {
-            marginRight: 15,
-        },
-
-        [theme.breakpoints.down('xs')]: {
-            minWidth: 150
-        },
     },
     cvButton: {
-        textTransform: "capitalize",
-        color: "white",
-        borderColor: "white",
-        borderWidth: "2px",
-        fontSize: "1.5em",
-        fontWeight: 500,
-        whiteSpace: "noWrap",
-        minWidth: 200,
-
         "&:hover": {
             color: "white",
             borderWidth: "2px",
             borderColor: Colors.appRed,
             background: Colors.appRed
-        },
-
-        [theme.breakpoints.down('xs')]: {
-            minWidth: 170
         },
     }
 }));

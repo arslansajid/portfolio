@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 5,
         padding: 20,
         minHeight: 250,
-        margin: "2em 0 2em 0",
+        marginBottom: "2em",
 
         [theme.breakpoints.down('sm')]: {
             padding: 0,
@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         fontSize: "1.125em",
         color: Colors.textGrey,
-      },
+    },
 }));
 
 export default ExperienceCard;
