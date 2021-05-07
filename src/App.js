@@ -9,6 +9,7 @@ import ExpertiseCard from './components/ExpertiseCard';
 import ExperienceCard from './components/ExperienceCard';
 import ProjectCard from './components/ProjectCard';
 import WorkTogether from './components/WorkTogether';
+import ContactButtons from './components/ContactButtons';
 import Colors from './styles/Colors';
 import Projects from './static/Projects';
 import Companies from './static/Companies';
@@ -155,6 +156,7 @@ const App = () => {
       </Container>
       <WorkTogether />
       <Footer />
+      <ContactButtons />
     </div>
   );
 }
