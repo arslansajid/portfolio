@@ -179,6 +179,16 @@ const Projects = [
     image: 'camero.png',
     description: 'Camero Web Application.'
   },
+  {
+    title: "AVON EHR",
+    completed: "15 March, 2021",
+    github: false,
+    githubLink: '',
+    website: true,
+    websiteLink: 'https://avonehr.com/',
+    image: 'avon-ehr.png',
+    description: 'The Integrative and Functional Medicine EHR'
+  },
 ]
 
 export default Projects;
