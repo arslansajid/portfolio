@@ -5,37 +5,38 @@ const Experience = [
     location: "Los Angeles, California, United States (Remote)",
     duration: '1 September 2020 - Present',
     website: false,
-    websiteLink: 'https://davyschess.com/',
+    websiteLink: 'https://avonehr.com/',
     logo: "clinios.png",
     responsibilities: [
-      'Development of front end web & cross-platform mobile components for company projects.',
-      'Coordinating with QA engineers and project managers on analysing requirements and execution plans. Involved in the complete DevOps cycle.'
+      'Development of front end EHR application by building functional components and consuming APIs.',
+      'Coordinating with backend engineers and project managers on analysing requirements and execution plans.',
+      'Involved in decision making of the modern libraries and frameworks integration.'
     ]
   },
-  {
-    name: "Code Memory LLC",
-    designation: "React.JS Developer",
-    location: "Jamaica (Remote)",
-    duration: '1 May 2020 - 1 September 2020',
-    website: false,
-    websiteLink: 'https://davyschess.com/',
-    logo: "cm.png",
-    responsibilities: [
-      'Development of front end web & cross-platform mobile components for company projects.',
-      'Coordinating with QA engineers and project managers on analysing requirements and execution plans. Involved in the complete DevOps cycle.'
-    ]
-  },
+  // {
+  //   name: "Code Memory LLC",
+  //   designation: "React.JS Developer",
+  //   location: "Jamaica (Remote)",
+  //   duration: '1 May 2020 - 1 September 2020',
+  //   website: false,
+  //   websiteLink: 'https://davyschess.com/',
+  //   logo: "cm.png",
+  //   responsibilities: [
+  //     'Development of front end web & cross-platform mobile components for company projects.',
+  //     'Coordinating with QA engineers and project managers on analysing requirements and execution plans. Involved in the complete DevOps cycle.'
+  //   ]
+  // },
   {
     name: "CARE Private Limited",
     designation: "Senior Front End Developer",
     location: "Islamabad, Pakistan",
-    duration: '1 March 2020 - Present',
+    duration: '1 March 2020 - 18 June 2021',
     website: true,
     websiteLink: 'https://carepvtltd.com/',
     logo: "care.png",
     responsibilities: [
-      'Development of front end web & cross-platform mobile components for company projects.',
-      'Coordinating with QA engineers and project managers on analysing requirements and execution plans. Involved in the complete DevOps cycle.'
+      'Development of front end web applications for company projects.',
+      'Coordinating with backend engineers, QA engineers and project managers on analysing requirements and execution plans. Involved in the complete DevOps cycle.'
     ]
   },
   {
@@ -63,7 +64,6 @@ const Experience = [
       'Development of front end web & cross-platform mobile components for company projects.',
       'Worked on the graana.com web portal and delivered responsive front-end components.',
       'Bootstrapped the project and delivered the first release.',
-      'Coordinating with QA engineers and project managers on analysing requirements and execution plans. Involved in the complete DevOps cycle.'
     ]
   },
 ]
