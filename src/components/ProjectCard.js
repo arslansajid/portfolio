@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
 
     return (
         <>
-            <Card className={classes.root} elevation={3}>
+            <Card className={classes.root} elevation={3} key={title}>
                 {/* <CardActionArea> */}
                 <CardMedia
                     className={classes.media}

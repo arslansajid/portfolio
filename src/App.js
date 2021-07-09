@@ -14,6 +14,9 @@ import Colors from './styles/Colors';
 import Projects from './static/Projects';
 import Companies from './static/Companies';
 import { analytics } from "./firebase";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import { CarouselResponsive, isDesktop } from './utils/carouselConfig';
 
 const App = () => {
 
@@ -122,22 +125,53 @@ const App = () => {
             Here are some of the projects that I have done for clients all around the world.
           </Typography>
         </Grid>
-        <Grid
-          container
-          className={classes.section}
-        // lg={12} md={12} sm={12} xs={12}
-        // spacing={3}
-        // justify="center"
-        >
-          {
-            Projects.map((project, index) => {
-              return (
-                <Grid
-                  lg={4} md={6} sm={6} xs={12}
-                  item
-                  key={index}
-                >
+        {isDesktop
+          ?
+          <Grid
+            container
+            className={classes.section}
+          >
+            {
+              Projects.map((project, index) => {
+                return (
+                  <Grid
+                    lg={4} md={6} sm={6} xs={12}
+                    item
+                    key={index}
+                  >
+                    <ProjectCard
+                      title={project.title}
+                      completionDate={project.completed}
+                      github={project.github}
+                      githubLink={project.githubLink}
+                      website={project.website}
+                      websiteLink={project.websiteLink}
+                      image={project.image}
+                      description={project.description}
+                    />
+                  </Grid>
+                )
+              })
+            }
+          </Grid>
+          :
+          <Carousel
+            swipeable={true}
+            draggable={true}
+            showDots={false}
+            responsive={CarouselResponsive}
+            ssr={false}
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={4000}
+            keyBoardControl={true}
+            transitionDuration={1000}
+          >
+            {
+              Projects.map((project) => {
+                return (
                   <ProjectCard
+                    key={project.title}
                     title={project.title}
                     completionDate={project.completed}
                     github={project.github}
@@ -147,12 +181,11 @@ const App = () => {
                     image={project.image}
                     description={project.description}
                   />
-                </Grid>
-              )
-            })
-          }
-        </Grid>
-
+                )
+              })
+            }
+          </Carousel>
+        }
       </Container>
       <WorkTogether />
       <Footer />
