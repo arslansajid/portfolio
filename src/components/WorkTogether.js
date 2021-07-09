@@ -19,13 +19,16 @@ const Footer = () => {
                 <Typography className={classes.description}>
                     Interested in working together? We should queue up a chat. I’ll buy the coffee.
                 </Typography>
-                <Button
-                    className={classes.hireButton}
-                    size="large"
-                    variant="outlined"
-                    color="primary"
-                >Contact
-                </Button>
+                <a href="mailto:arslansajid951@gmail.com">
+                    <Button
+                        className={classes.hireButton}
+                        size="large"
+                        variant="outlined"
+                        color="primary"
+                    >
+                        Contact
+                    </Button>
+                </a>
             </Grid>
         </>
     );

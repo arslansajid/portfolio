@@ -102,9 +102,9 @@ const useStyles = makeStyles((theme) => ({
     dateTextContainer: {
         position: "absolute",
         transform: "rotate(90deg)",
-        right: -20,
+        right: -30,
         bottom: 10,
-        padding: "15px 25px 15px 25px",
+        padding: theme.spacing(1, 2),
         borderRadius: 5,
         background: Colors.appRed,
     },

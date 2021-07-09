@@ -11,6 +11,7 @@ import Colors from '../styles/Colors';
 
 const Footer = () => {
     const classes = useStyles();
+    const currentYear = new Date().getFullYear();
 
     return (
         <>
@@ -35,13 +36,13 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            <IconButton
-                                variant="contained"
+                                <IconButton
+                                    variant="contained"
                                 // color="secondary"
                                 // className={`${classes.button} `}
-                            >
-                                <InstagramIcon />
-                            </IconButton>
+                                >
+                                    <InstagramIcon />
+                                </IconButton>
                             </a>
                             <a
                                 href="https://fb.com/arslan.sajid.773"
@@ -50,8 +51,8 @@ const Footer = () => {
                             >
                                 <IconButton
                                     variant="contained"
-                                    // color="primary"
-                                    // className={`${classes.button} ${classes.fbButton}`}
+                                // color="primary"
+                                // className={`${classes.button} ${classes.fbButton}`}
                                 >
                                     <FacebookIcon />
                                 </IconButton>
@@ -61,35 +62,35 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            <IconButton
-                                variant="contained"
+                                <IconButton
+                                    variant="contained"
                                 // color="default"
                                 // className={classes.button}
 
-                            >
-                                <GitHubIcon />
-                            </IconButton>
+                                >
+                                    <GitHubIcon />
+                                </IconButton>
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/arslan-sajid-b13005107/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                            <IconButton
-                                variant="contained"
+                                <IconButton
+                                    variant="contained"
                                 // color="primary"
                                 // className={`${classes.button} ${classes.liButton}`}
-                            >
-                                <LinkedInIcon />
-                            </IconButton>
+                                >
+                                    <LinkedInIcon />
+                                </IconButton>
                             </a>
                         </div>
                     </Grid>
                     <Grid lg={4} md={4} sm={12} xs={12} item>
                         <div className={classes.textRight}>
                             <Typography className={classes.copyRightText}>
-                                Made with <HeartIcon className={classes.heartIcon} /> by Arslan Sajid in 2020.
-                        </Typography>
+                                Made with <HeartIcon className={classes.heartIcon} /> by Arslan Sajid in {currentYear}.
+                            </Typography>
                         </div>
                     </Grid>
                 </Grid>
