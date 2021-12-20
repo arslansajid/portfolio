@@ -89,7 +89,7 @@ const App = () => {
           </Typography>
           <div className={classes.border} />
           <Typography className={classes.description}>
-            I've got more than 3 years of experience in software development.
+            I've got almost 4 years of experience in software development.
           </Typography>
 
           <Grid

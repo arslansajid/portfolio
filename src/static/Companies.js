@@ -1,9 +1,23 @@
 const Experience = [
   {
+    name: "Grid Singularity GmbH",
+    designation: "Senior Front End Engineer",
+    location: "Berlin, Germany",
+    duration: '1 August 2021 - Present',
+    website: true,
+    websiteLink: 'https://gridsingularity.com/',
+    logo: "GSY.png",
+    responsibilities: [
+      'Development of front end Grid Singularity Website.',
+      'Development of Grid Singularity decentralized energy trading web application.',
+      'Involved in decision making of the modern libraries and frameworks integration.'
+    ]
+  },
+  {
     name: "Clinios",
     designation: "Senior React.JS Developer",
     location: "Los Angeles, California, United States (Remote)",
-    duration: '1 September 2020 - Present',
+    duration: '1 September 2020 - 1 August 2021',
     website: false,
     websiteLink: 'https://avonehr.com/',
     logo: "clinios.png",
