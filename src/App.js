@@ -10,6 +10,7 @@ import ExperienceCard from './components/ExperienceCard';
 import ProjectCard from './components/ProjectCard';
 import WorkTogether from './components/WorkTogether';
 import ContactButtons from './components/ContactButtons';
+import Marquee from "./components/Marquee";
 import Colors from './styles/Colors';
 import Projects from './static/Projects';
 import Companies from './static/Companies';
@@ -89,7 +90,7 @@ const App = () => {
           </Typography>
           <div className={classes.border} />
           <Typography className={classes.description}>
-            I've got almost 4 years of experience in software development.
+            I've got more than 4 years of experience in software development.
           </Typography>
 
           <Grid
@@ -187,6 +188,7 @@ const App = () => {
           </Carousel>
         }
       </Container>
+      <Marquee />
       <WorkTogether />
       <Footer />
       <ContactButtons />

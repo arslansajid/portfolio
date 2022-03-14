@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        zIndex: 2,
     },
     fab: {
         width: 60,
