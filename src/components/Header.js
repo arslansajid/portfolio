@@ -54,7 +54,7 @@ const Header = (props) => {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://drive.google.com/file/d/1RlPg-swe36BAfT5DBgafeC8jpvUlac0-/view?usp=sharing">
+                        href="https://drive.google.com/file/d/1ZrB8VjK-3W4Bzj6yfJLkGpx0rZxMqyp6/view?usp=sharing">
                     <Button
                         className={`${classes.headerButton} ${classes.cvButton}`}
                         size="large"
