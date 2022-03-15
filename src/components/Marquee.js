@@ -32,13 +32,13 @@ const useStyles = makeStyles((theme) => ({
         padding: "2em 0",
     },
     block: {
-        width: 100,
-        height: 100,
+        width: 70,
+        height: 70,
         padding: "10px 30px",
 
         [theme.breakpoints.down('sm')]: {
-            width: 60,
-            height: 60,
+            width: 50,
+            height: 50,
             padding: "10px 20px",
         },
 
