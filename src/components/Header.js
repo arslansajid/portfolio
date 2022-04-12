@@ -29,7 +29,7 @@ const Header = (props) => {
                         <Typed
                             strings={["web applications.", "mobile applications.", "e-commerce stores.", "landing pages.", "corporate websites.", "User Interfaces."]}
                             startDelay={300}
-                            typeSpeed={120}
+                            typeSpeed={70}
                             loop={true}
                             loopCount={Infinity}
                             fadeOut={true}
@@ -41,29 +41,29 @@ const Header = (props) => {
                 </div>
                 <div className={classes.hireBtnContainer}>
                     <div className={classes.btnsContainer}>
-                    <a href="mailto:arslansajid951@gmail.com">
-                    <Button
-                        className={`${classes.headerButton} ${classes.hireButton}`}
-                        size="large"
-                        variant="outlined"
-                        color="primary"
-                    >
-                        Hire Me
-                    </Button>
-                    </a>
-                    <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://drive.google.com/file/d/1ZrB8VjK-3W4Bzj6yfJLkGpx0rZxMqyp6/view?usp=sharing">
-                    <Button
-                        className={`${classes.headerButton} ${classes.cvButton}`}
-                        size="large"
-                        variant="outlined"
-                        color="primary"
-                    >
-                        Download CV
-                    </Button>
-                    </a>
+                        <a href="mailto:arslansajid951@gmail.com">
+                            <Button
+                                className={`${classes.headerButton} ${classes.hireButton}`}
+                                size="large"
+                                variant="outlined"
+                                color="primary"
+                            >
+                                Hire Me
+                            </Button>
+                        </a>
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://drive.google.com/file/d/1ZrB8VjK-3W4Bzj6yfJLkGpx0rZxMqyp6/view?usp=sharing">
+                            <Button
+                                className={`${classes.headerButton} ${classes.cvButton}`}
+                                size="large"
+                                variant="outlined"
+                                color="primary"
+                            >
+                                Download CV
+                            </Button>
+                        </a>
                     </div>
                 </div>
             </Container>

@@ -56,7 +56,7 @@ const App = () => {
             <ExpertiseCard
               icon={"web"}
               heading={"Web Apps Development"}
-              description={"I develop for the web with JavaScript, HTML(5), CSS(3), SASS and SCSS. I love coding things from scratch, and have professional experience with front-end frameworks like React.Js & Vue.Js"}
+              description={"I develop for the web with JavaScript, HTML(5), CSS(3), SASS and SCSS. I love coding things from scratch, and have professional experience with front-end frameworks like React.Js, Next.Js and Gatsby."}
             />
           </Grid>
           <Grid
@@ -66,7 +66,7 @@ const App = () => {
             <ExpertiseCard
               icon={"mobile"}
               heading={"Mobile Apps Development"}
-              description={"I design and develop native mobile applications for Android and iOS. I have expertise in developing mobile apps using react-native and flutter."}
+              description={"I design and develop native mobile applications for Android and iOS. I have expertise in developing mobile apps using react-native."}
             />
           </Grid>
           <Grid

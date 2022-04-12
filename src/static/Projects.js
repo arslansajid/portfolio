@@ -189,6 +189,16 @@ const Projects = [
     image: 'avon-ehr.png',
     description: 'The Integrative and Functional Medicine EHR'
   },
+  {
+    title: "Getit Ecommerce App",
+    completed: "6 April, 2022",
+    github: true,
+    githubLink: 'https://github.com/arslansajid/market-app',
+    website: true,
+    websiteLink: 'https://thirdlove-beabd.web.app',
+    image: 'getit.png',
+    description: 'E-commerce app with Typescript, Redux Saga and styled-components.'
+  },
 ]
 
 export default Projects;
